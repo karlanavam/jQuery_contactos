@@ -1,3 +1,5 @@
+var contador = 0;
+
 $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
@@ -22,13 +24,23 @@ var imprimir = function(){
     //Crear espacios individuales para contactos
     var $contenedorContacto = $('<div />');
     var $parrafoNombres = $('<p>' + $nombre + ' ' + $apellido  + ' - ' + $telefono + '</p>');
+    
+    
+    var $contador = $('<h3>' +  'Total de contactos agregados: ' + $contador + '</h3>');
+   
  
     //Imprimirlo
     $espacioContactos.append($contenedorContacto);
     $contenedorContacto.append($parrafoNombres);
+  
     
+    //Quitas carácteres a inputs
     $textoNombre.val('');
     $textoApellido.val('');
     $textoTelefono.val('');
+    
+    
+    contador++;
+    console.log(contador);
 }
 
