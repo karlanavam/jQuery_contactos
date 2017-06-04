@@ -7,18 +7,15 @@ header{
 	margin-bottom: 2.5%;
 }
 
-header .nav-wrappe p {
-    font-size: 1em;
-}
-
 header>.nav-wrappe {
     padding-top: 0;
     margin: 0;
 }
 
-header>.nav-wrappe>p {
+header .nav-wrappe p {
     padding-top: 0;
     margin: 0;
+	font-size: 3em;
 }
 
 #contactosAgregados #numContactos p, span {
