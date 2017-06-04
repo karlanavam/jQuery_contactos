@@ -7,16 +7,36 @@ $(document).ready(function(){
     $('#btnAgregarModal').click(imprimirContactos);
   });
 
+function Contacto ($nombre, $apellido, $telefono) {
+var $textoNombre = $("#icon_prefix");
+var $nombre = $textoNombre.val();
+
+var $textoApellido = $("#last_name");
+var $apellido = $textoApellido.val();
+
+var $textoTelefono = $("#icon_telephone");
+var $telefono = $textoTelefono.val();
+	
+	this.$nombre = $nombre = $textoNombre.val();
+	console.log($nombre);
+	this.$apellido = $textoApellido.val();
+	console.log($apellido);
+	this.$telefono = $textoTelefono.val();
+	console.log($telefono);
+} 
+
 var imprimirContactos = function(){
-    //Recoge datos
-    var $textoNombre = $("#icon_prefix");
-    var $nombre = $textoNombre.val();
-    
-    var $textoApellido = $("#last_name");
-    var $apellido = $textoApellido.val();
-    
-    var $textoTelefono = $("#icon_telephone");
-    var $telefono = $textoTelefono.val();
+	var $textoNombre = $("#icon_prefix");
+	var $nombre = $textoNombre.val();
+
+	var $textoApellido = $("#last_name");
+	var $apellido = $textoApellido.val();
+
+	var $textoTelefono = $("#icon_telephone");
+	var $telefono = $textoTelefono.val();
+
+	var contactoNuevo = new Contacto;
+	console.log(contactoNuevo);
     
     //Crea el espacio para imprimir
     var $espacioContactos = $("#contactosAgregados");
@@ -39,6 +59,5 @@ var imprimirContactos = function(){
 	contador++;
 	$spanContador.text(contador);
 }
-
 
 

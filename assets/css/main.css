@@ -34,6 +34,12 @@ header>.nav-wrappe>p {
     font-size: 1em;
 }
 
+.btn-floating.btn-large {
+    margin-right: 1%;
+}
+
+
+
 #modalAgregar > .input-field > i > label {
     font-size: 1em;
 }
